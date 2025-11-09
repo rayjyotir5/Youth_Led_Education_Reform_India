@@ -40,7 +40,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Youth Education Research Team"
+      author: "Joyeeta Ray"
   - scope:
       path: ""
       type: "pages"
@@ -58,14 +58,12 @@ navigation:
 
 # Social Sharing
 social:
-  twitter: "your_twitter_handle" # Update with your Twitter handle
-  facebook: "your_facebook_page" # Update if applicable
-  linkedin: "your_linkedin_profile" # Update if applicable
+  linkedin: "https://www.linkedin.com/in/joyeeta-ray/" 
 
 # Reading Time
 reading_time:
   enabled: true
-  words_per_minute: 200
+  words_per_minute: 150
 
 # Table of Contents
 toc:
