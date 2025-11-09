@@ -1,0 +1,81 @@
+# Site Settings
+title: "Youth-Led Education Reform in India"
+description: "A comprehensive blog series examining how youth-led movements are advancing India's education sector through micro-improvement initiatives at the grassroots level."
+url: "https://rayjyotir5.github.io" # Update with your GitHub username
+baseurl: "/Youth_Led_Education_Reform_India" # Update if your repo name differs
+author: "Joyeeta Ray"
+email: "joyeeta@shikshalokam.org"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+timezone: Asia/Kolkata
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+
+# Collections
+collections:
+  series:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Youth Education Research Team"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: /
+  - title: "Series Overview"
+    url: /series-toc/
+  - title: "Posts"
+    url: /posts/
+
+# Social Sharing
+social:
+  twitter: "your_twitter_handle" # Update with your Twitter handle
+  facebook: "your_facebook_page" # Update if applicable
+  linkedin: "your_linkedin_profile" # Update if applicable
+
+# Reading Time
+reading_time:
+  enabled: true
+  words_per_minute: 200
+
+# Table of Contents
+toc:
+  enabled: true
+  min_level: 2
+  max_level: 4
+
+# Theme (using minima as base, but we'll override with custom layouts)
+theme: minima
+
+# GitHub Pages
+github: [metadata]
+

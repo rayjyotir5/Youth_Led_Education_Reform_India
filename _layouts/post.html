@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="post-subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+        
+        <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            <span class="reading-time" data-words="{{ content | number_of_words }}"></span>
+            {% if page.author %}
+            <span class="author">By {{ page.author }}</span>
+            {% endif %}
+        </div>
+    </header>
+    
+    {% if page.series %}
+    <div class="series-info">
+        <p>This is post {{ page.series }} in a 6-part series on Youth-Led Education Reform in India.</p>
+        <a href="{{ '/series-toc/' | relative_url }}">View Series Overview</a>
+    </div>
+    {% endif %}
+    
+    <div class="post-content-wrapper">
+        <div class="post-content">
+            {{ content }}
+        </div>
+        
+        <aside class="post-sidebar">
+            {% include toc.html %}
+        </aside>
+    </div>
+    
+    <footer class="post-footer">
+        {% include social-share.html %}
+        
+        <div class="post-navigation">
+            {% assign sorted_posts = site.posts | sort: 'series' %}
+            {% assign current_index = 0 %}
+            {% for post in sorted_posts %}
+                {% if post.url == page.url %}
+                    {% assign current_index = forloop.index0 %}
+                {% endif %}
+            {% endfor %}
+            
+            {% if current_index > 0 %}
+                {% assign prev_index = current_index | minus: 1 %}
+                {% assign prev_post = sorted_posts[prev_index] %}
+                <a href="{{ prev_post.url | relative_url }}" class="nav-previous">← Previous: {{ prev_post.title | truncate: 60 }}</a>
+            {% endif %}
+            
+            {% assign next_index = current_index | plus: 1 %}
+            {% if next_index < sorted_posts.size %}
+                {% assign next_post = sorted_posts[next_index] %}
+                <a href="{{ next_post.url | relative_url }}" class="nav-next">Next: {{ next_post.title | truncate: 60 }} →</a>
+            {% endif %}
+        </div>
+    </footer>
+</article>
+
