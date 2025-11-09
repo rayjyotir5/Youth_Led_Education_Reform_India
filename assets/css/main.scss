@@ -1,12 +1,15 @@
 ---
 ---
 
-// Variables
-$primary-color: #2563eb;
-$secondary-color: #1e40af;
+// Variables - Vibrant Shikshalokam-inspired theme
+$primary-color: #ff6b35;        // Vibrant coral orange - energy & enthusiasm
+$secondary-color: #f7931e;      // Warm golden orange - optimism
+$accent-color: #00a896;         // Teal - growth & harmony
+$accent-secondary: #0891b2;     // Cyan - innovation & clarity
 $text-color: #1f2937;
-$light-gray: #f3f4f6;
-$border-color: #e5e7eb;
+$light-bg: #fff5f0;             // Warm light background
+$light-gray: #fef3f0;
+$border-color: #ffd4c4;
 $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 // Reset and base styles
@@ -49,11 +52,16 @@ body {
     .site-title {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $primary-color;
+        background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         text-decoration: none;
+        transition: all 0.3s;
         
         &:hover {
-            color: $secondary-color;
+            transform: translateY(-2px);
+            filter: brightness(1.1);
         }
     }
     
@@ -66,9 +74,26 @@ body {
             color: $text-color;
             text-decoration: none;
             font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(90deg, $primary-color 0%, $accent-color 100%);
+                transition: width 0.3s ease;
+            }
             
             &:hover {
                 color: $primary-color;
+                
+                &::after {
+                    width: 100%;
+                }
             }
         }
     }
@@ -102,26 +127,32 @@ body {
         input {
             flex: 1;
             padding: 0.75rem;
-            border: 1px solid $border-color;
-            border-radius: 4px;
+            border: 2px solid $border-color;
+            border-radius: 8px;
             font-size: 1rem;
+            transition: all 0.3s ease;
             
             &:focus {
                 outline: none;
                 border-color: $primary-color;
+                box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
             }
         }
         
         button {
-            padding: 0.75rem 1rem;
-            background-color: $primary-color;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
             
             &:hover {
-                background-color: $secondary-color;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
             }
         }
     }
@@ -204,17 +235,21 @@ body {
     }
     
     .series-info {
-        background-color: $light-gray;
-        padding: 1rem;
-        border-radius: 4px;
+        background: linear-gradient(135deg, $light-gray 0%, #fff 100%);
+        padding: 1.5rem;
+        border-radius: 12px;
         margin-bottom: 2rem;
+        border-left: 5px solid $primary-color;
+        box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1);
         
         a {
             color: $primary-color;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            transition: color 0.2s;
             
             &:hover {
+                color: $accent-color;
                 text-decoration: underline;
             }
         }
@@ -239,8 +274,12 @@ body {
         
         h2 {
             font-size: 2rem;
-            border-bottom: 2px solid $border-color;
-            padding-bottom: 0.5rem;
+            border-bottom: 3px solid transparent;
+            background-image: linear-gradient(90deg, $primary-color 0%, $accent-color 100%);
+            background-size: 100% 3px;
+            background-repeat: no-repeat;
+            background-position: 0 100%;
+            padding-bottom: 0.75rem;
         }
         
         h3 {
@@ -265,11 +304,13 @@ body {
         }
         
         blockquote {
-            border-left: 4px solid $primary-color;
-            padding-left: 1rem;
-            margin: 1rem 0;
-            color: #6b7280;
+            border-left: 5px solid $accent-color;
+            background: linear-gradient(90deg, rgba(0, 168, 150, 0.05) 0%, transparent 100%);
+            padding: 1rem 1rem 1rem 1.5rem;
+            margin: 1.5rem 0;
+            color: #4b5563;
             font-style: italic;
+            border-radius: 0 8px 8px 0;
         }
         
         code {
@@ -320,16 +361,21 @@ body {
 
 // Table of Contents
 .table-of-contents {
-    background-color: $light-gray;
+    background: linear-gradient(135deg, $light-gray 0%, #fff 100%);
     padding: 1.5rem;
-    border-radius: 4px;
+    border-radius: 12px;
     position: sticky;
     top: 100px;
+    border: 2px solid $border-color;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.08);
     
     h3 {
         font-size: 1.1rem;
         margin-bottom: 1rem;
         color: $text-color;
+        font-weight: 700;
+        border-bottom: 2px solid $primary-color;
+        padding-bottom: 0.5rem;
     }
     
     #toc-list {
@@ -358,8 +404,16 @@ body {
                     padding-left: 2rem;
                 }
                 
-                &:hover, &.active {
+                &:hover {
                     color: $primary-color;
+                }
+                
+                &.active {
+                    color: $accent-color;
+                    font-weight: 600;
+                    border-left: 3px solid $accent-color;
+                    padding-left: 0.5rem;
+                    margin-left: -0.5rem;
                 }
             }
         }
@@ -424,19 +478,22 @@ body {
     .hero {
         text-align: center;
         padding: 4rem 0;
-        background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        background: linear-gradient(135deg, $primary-color 0%, $secondary-color 50%, $accent-color 100%);
         color: white;
         margin-bottom: 3rem;
+        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
         
         h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         
         p {
             font-size: 1.25rem;
             max-width: 700px;
             margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
     }
     
@@ -449,13 +506,33 @@ body {
     
     .post-card {
         background: white;
-        border: 1px solid $border-color;
-        border-radius: 8px;
+        border: 2px solid $border-color;
+        border-radius: 12px;
         padding: 1.5rem;
-        transition: box-shadow 0.3s;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, $primary-color 0%, $accent-color 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
         
         &:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 8px 24px rgba(255, 107, 53, 0.2);
+            border-color: $primary-color;
+            transform: translateY(-4px);
+            
+            &::before {
+                transform: scaleX(1);
+            }
         }
         
         h3 {
@@ -485,9 +562,12 @@ body {
 
 // Footer
 .site-footer {
-    background-color: $light-gray;
+    background: linear-gradient(180deg, #fff 0%, $light-bg 50%, $light-gray 100%);
     padding: 3rem 0 1rem;
     margin-top: 4rem;
+    border-top: 3px solid transparent;
+    border-image: linear-gradient(90deg, $primary-color 0%, $accent-color 100%);
+    border-image-slice: 1;
     
     .footer-content {
         display: grid;
@@ -499,6 +579,19 @@ body {
             h3 {
                 margin-bottom: 1rem;
                 color: $text-color;
+                font-weight: 700;
+                position: relative;
+                padding-bottom: 0.5rem;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 40px;
+                    height: 3px;
+                    background: linear-gradient(90deg, $primary-color 0%, $accent-color 100%);
+                }
             }
             
             ul {
@@ -510,9 +603,11 @@ body {
                     a {
                         color: #6b7280;
                         text-decoration: none;
+                        transition: all 0.2s;
                         
                         &:hover {
                             color: $primary-color;
+                            padding-left: 4px;
                         }
                     }
                 }
@@ -525,6 +620,12 @@ body {
                 a {
                     color: $primary-color;
                     text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.2s;
+                    
+                    &:hover {
+                        color: $accent-color;
+                    }
                 }
             }
         }
