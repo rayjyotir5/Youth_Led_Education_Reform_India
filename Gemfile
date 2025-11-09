@@ -6,8 +6,8 @@ gem "jekyll-feed", "~> 0.12"
 gem "jekyll-seo-tag", "~> 2.8"
 gem "jekyll-sitemap", "~> 1.4"
 
-# GitHub Pages
-gem "github-pages", group: :jekyll_plugins
+# Note: github-pages gem removed - GitHub Pages now supports Jekyll 4.x via GitHub Actions
+# The individual plugins above are compatible with modern Jekyll
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
