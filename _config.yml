@@ -12,6 +12,10 @@ highlighter: rouge
 permalink: /:categories/:title/
 timezone: Asia/Kolkata
 
+# SASS/SCSS Settings
+sass:
+  style: expanded
+
 # Plugins
 plugins:
   - jekyll-feed
