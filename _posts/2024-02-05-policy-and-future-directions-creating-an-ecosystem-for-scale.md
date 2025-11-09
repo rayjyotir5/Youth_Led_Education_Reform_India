@@ -3,7 +3,7 @@ layout: post
 title: "Policy and Future Directions: Creating an Ecosystem for Scale"
 subtitle: "How Government, Funders, and Institutions Can Nurture Youth-Led Micro-Improvements—and Why It Matters for India's Future"
 date: 2024-02-05
-author: "Youth Education Research Team"
+author: "Joyeeta Ray"
 categories: [Policy, Future, Ecosystem]
 tags: ['Policy', 'Future', 'Ecosystem', 'youth-led', 'education reform', 'India', 'micro-improvements']
 series: 6

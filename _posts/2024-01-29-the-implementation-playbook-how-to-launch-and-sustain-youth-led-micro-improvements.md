@@ -3,7 +3,7 @@ layout: post
 title: "The Implementation Playbook: How to Launch and Sustain Youth-Led Micro-Improvements"
 subtitle: "A Step-by-Step Guide for Aspiring Changemakers—Frameworks, Tools, and Real-World Templates"
 date: 2024-01-29
-author: "Youth Education Research Team"
+author: "Joyeeta Ray"
 categories: [Implementation, Guide, How-To]
 tags: ['Implementation', 'Guide', 'How-To', 'youth-led', 'education reform', 'India', 'micro-improvements']
 series: 5

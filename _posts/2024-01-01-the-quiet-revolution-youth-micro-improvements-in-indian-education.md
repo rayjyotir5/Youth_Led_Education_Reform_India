@@ -3,7 +3,7 @@ layout: post
 title: "The Quiet Revolution: How Youth-Led Micro-Improvements Are Transforming Indian Education from the Ground Up"
 subtitle: "An Introduction to Grassroots Education Reform"
 date: 2024-01-01
-author: "Youth Education Research Team"
+author: "Joyeeta Ray"
 categories: [Introduction, Overview]
 tags: [youth-led, education reform, micro-improvements, India, grassroots]
 series: 1
