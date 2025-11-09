@@ -2,7 +2,7 @@
 layout: post
 title: "Lessons from the Field: Five Youth-Led Initiatives That Navigated Opportunity and Challenge"
 subtitle: "Real Stories, Real Outcomes, Real Lessons—A Deep Dive into What Actually Works"
-date: 2024-01-22
+date: 2025-11-05
 author: "Joyeeta Ray"
 categories: [Case Studies, Examples, Success Stories]
 tags: ['Case Studies', 'Examples', 'Success Stories', 'youth-led', 'education reform', 'India', 'micro-improvements']

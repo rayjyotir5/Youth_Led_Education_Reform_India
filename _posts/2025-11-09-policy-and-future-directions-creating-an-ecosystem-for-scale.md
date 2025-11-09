@@ -2,7 +2,7 @@
 layout: post
 title: "Policy and Future Directions: Creating an Ecosystem for Scale"
 subtitle: "How Government, Funders, and Institutions Can Nurture Youth-Led Micro-Improvements—and Why It Matters for India's Future"
-date: 2024-02-05
+date: 2025-11-09
 author: "Joyeeta Ray"
 categories: [Policy, Future, Ecosystem]
 tags: ['Policy', 'Future', 'Ecosystem', 'youth-led', 'education reform', 'India', 'micro-improvements']
@@ -742,7 +742,7 @@ This six-post series has explored youth-led micro-improvements from multiple ang
 
 **Where to Go From Here**:
 
-**If You're a Youth Leader**: Use Post 5 as your field manual. Join a collective. Start small. Document everything. Share your story with us at grassrootseducation@blog.com—we want to showcase your journey.
+**If You're a Youth Leader**: Use Post 5 as your field manual. Join a collective. Start small. Document everything. Share your story with us at joyeeta@shikshalokam.org—we want to showcase your journey.
 
 **If You're a Policymaker**: Review Post 6 recommendations. Start with one pilot (Innovation Sandbox Schools or Youth Champion positions). Measure impact. Scale what works.
 
@@ -814,7 +814,7 @@ The revolution is quiet. But it's already here.
 
 **Acknowledgments**: We thank the hundreds of youth leaders who shared their stories, challenges, and triumphs with honesty and courage. Your work inspires this series.
 
-**For Correspondence**: Reach us at grassrootseducation@blog.com or follow our work at grassrootseducation.blog
+**For Correspondence**: Reach us at joyeeta@shikshalokam.org or follow our work at grassrootseducation.blog
 
 **License**: This series is published under Creative Commons Attribution-ShareAlike 4.0. Feel free to reproduce, adapt, and share widely. Let's spread these ideas far and wide.
 

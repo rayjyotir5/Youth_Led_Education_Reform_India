@@ -2,7 +2,7 @@
 layout: post
 title: "The Hard Truth: Navigating Challenges in Youth-Led Education Reform"
 subtitle: "Why Good Intentions Aren't Enough—A Deep Dive into the Structural, Social, and Systemic Obstacles"
-date: 2024-01-15
+date: 2025-11-04
 author: "Joyeeta Ray"
 categories: [Challenges, Obstacles, Reality]
 tags: ['Challenges', 'Obstacles', 'Reality', 'youth-led', 'education reform', 'India', 'micro-improvements']

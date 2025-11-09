@@ -2,7 +2,7 @@
 layout: post
 title: "Seizing the Moment: Unprecedented Opportunities for Youth-Led Education Reform"
 subtitle: "Exploring the Convergence of Technology, Demographics, and Policy that Creates a Perfect Storm for Grassroots Change"
-date: 2024-01-08
+date: 2025-11-03
 author: "Joyeeta Ray"
 categories: [Opportunities, Technology, Policy]
 tags: ['Opportunities', 'Technology', 'Policy', 'youth-led', 'education reform', 'India', 'micro-improvements']
